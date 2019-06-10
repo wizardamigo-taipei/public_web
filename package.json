@@ -1,0 +1,21 @@
+{
+  "name": "wizard_amigos_taipei_web",
+  "version": "1.0.0",
+  "description": "wizardAmigos Taipei Web Site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "nextjs"
+  ],
+  "author": "json",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
