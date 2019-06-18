@@ -36,3 +36,9 @@
 ## reference
 
   [nextjs with antd](https://medium.com/@mas.autsakorn/lets-create-a-project-with-nextjs-antd-and-deploy-with-now-sh-e38772348312)
+
+## Notice
+
+  because antd is writen by less, 
+
+  so any customed style need to use less to write

@@ -9,7 +9,8 @@
     "start": "next start"
   },
   "keywords": [
-    "nextjs"
+    "nextjs",
+    "antd"
   ],
   "author": "json",
   "license": "ISC",
