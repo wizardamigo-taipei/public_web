@@ -2,6 +2,7 @@
 
 ## framework
   [nextjs](https://github.com/zeit/next.js/)
+  [antd](https://ant.design/)
 
 ## pre-install 
 ```
@@ -31,3 +32,7 @@
     1 make contentful website
 
     2 add every activity content in this website and view
+
+## reference
+
+  [nextjs with antd](https://medium.com/@mas.autsakorn/lets-create-a-project-with-nextjs-antd-and-deploy-with-now-sh-e38772348312)
