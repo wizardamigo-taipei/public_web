@@ -1,13 +1,47 @@
-import Head from 'next/head';
-import {Button, Card, Row} from 'antd'
-const Home = () => (
-  <Card>
-    <Head>
-      <title>WizardAmigo Taipei</title>
-    </Head>
-    <Row justify="center" type="flex">Welcome to Wizard Amigos Taipei</Row>
-    <Row justify="center" type="flex"><Button type="primary">Button</Button></Row>
-  </Card>
-);
+import * as React from 'react';
+import stylesheet from 'antd/dist/antd.min.css'
 
-export default Home;
+import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+
+const { SubMenu } = Menu;
+const { Content, Sider, Header } = Layout;
+
+import _Header from './components/header';
+import _Footer from './components/footer';
+export default class App extends React.Component {
+  render() {
+    return <Layout>
+      <Header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Header>
+      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+      <style jsx global>{`
+        #components-layout-demo-top-side-2 .logo {
+          width: 120px;
+          height: 31px;
+          background: #333;
+          border-radius: 6px;
+          margin: 16px 28px 16px 0;
+          float: left;
+        }
+      `}</style>
+      
+      <_Header/>
+      
+      <Layout>
+        <Layout style={{ padding: '0 24px 24px' }}>
+          <Breadcrumb style={{ margin: '12px 0' }}>
+            <Breadcrumb.Item>Home</Breadcrumb.Item>
+            <Breadcrumb.Item>List</Breadcrumb.Item>
+            <Breadcrumb.Item>App</Breadcrumb.Item>
+          </Breadcrumb>
+          <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
+            Content
+          </Content>
+          <_Footer/>
+        </Layout>
+        
+      </Layout>
+    </Layout>
+  }
+}

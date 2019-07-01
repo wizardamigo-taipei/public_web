@@ -1,17 +1,8 @@
 {
-    "presets": [
-        "next/babel"
-    ],
-    "plugins": [
-        "@babel/plugin-proposal-class-properties",
-        [
-          "import",
-          {
-              "libraryName": "antd",
-              "libraryDirectory":"lib",
-              "style": true
-          }
-        ],
-        ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }]
-    ]
-  }
+  "plugins": [
+    ["inline-import", { "extensions": [".css"] }],
+    ["import", { "libraryName": "antd" }]
+  ],
+  "presets": ["next/babel"],
+  "ignore": []
+}
