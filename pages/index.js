@@ -12,6 +12,7 @@ export default class App extends React.Component {
   render() {
     return <Layout>
       <Header>
+        <title>Wizard Amigo Taipei</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         <style jsx global>{`
@@ -24,8 +25,9 @@ export default class App extends React.Component {
             float: left;
           }
         `}</style>
+        <_Header/>
       </Header>
-      <_Header/>
+      
       <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
         Content
       </Content>
