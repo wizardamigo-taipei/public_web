@@ -13,35 +13,23 @@ export default class App extends React.Component {
     return <Layout>
       <Header>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+        <style jsx global>{`
+          #components-layout-demo-top-side-2 .logo {
+            width: 120px;
+            height: 31px;
+            background: #333;
+            border-radius: 6px;
+            margin: 16px 28px 16px 0;
+            float: left;
+          }
+        `}</style>
       </Header>
-      <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-      <style jsx global>{`
-        #components-layout-demo-top-side-2 .logo {
-          width: 120px;
-          height: 31px;
-          background: #333;
-          border-radius: 6px;
-          margin: 16px 28px 16px 0;
-          float: left;
-        }
-      `}</style>
-      
       <_Header/>
-      
-      <Layout>
-        <Layout style={{ padding: '0 24px 24px' }}>
-          <Breadcrumb style={{ margin: '12px 0' }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
-            <Breadcrumb.Item>App</Breadcrumb.Item>
-          </Breadcrumb>
-          <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
-            Content
-          </Content>
-          <_Footer/>
-        </Layout>
-        
-      </Layout>
+      <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
+        Content
+      </Content>
+      <_Footer/>
     </Layout>
   }
 }

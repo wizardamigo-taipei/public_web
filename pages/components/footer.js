@@ -1,7 +1,9 @@
+import {Layout} from 'antd';
+const {Footer} = Layout;
 const _Footer = ()=>(
-  <footer>
+  <Footer style={{ textAlign: 'center' }}>
     footer
-  </footer>
+  </Footer>
 );
 
 export default _Footer;
