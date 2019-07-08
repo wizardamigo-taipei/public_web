@@ -1,6 +1,6 @@
 import * as React from 'react';
 import stylesheet from 'antd/dist/antd.min.css'
-
+import Link from 'next/link';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 
 const { SubMenu } = Menu;
@@ -29,7 +29,8 @@ export default class App extends React.Component {
       </Header>
       
       <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
-        Content
+        <Link href="/first"><a>first</a></Link>
+        <Link href="/second"><a>Second</a></Link>
       </Content>
       <_Footer/>
     </Layout>
