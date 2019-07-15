@@ -1,29 +1,26 @@
 {
-  "name": "next-with-antd",
+  "name": "wizard_amigo_taipei",
   "version": "1.0.0",
-  "repository": "https://github.com/hanpama/next-with-antd",
-  "description": "",
-  "keywords": [],
-  "author": "Max Choi",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "run_server": "node server",
     "export": "next export",
-    "surge": "surge"
+    "surge": "surge",
+    "server_start": "export PORT=4000 && node server.js"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.9.2",
+    "babel-plugin-import": "^1.9.1",
+    "koa": "^2.7.0",
+    "next": "latest",
+    "null-loader": "2.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "license": "ISC",
-  "dependencies": {
-    "antd": "^3.15.1",
-    "babel-plugin-import": "^1.11.0",
-    "babel-plugin-inline-import": "^3.0.0",
-    "next": "^9.0.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
   "devDependencies": {
-    "koa": "^2.7.0",
     "surge": "^0.21.3"
   }
 }
