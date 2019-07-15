@@ -1,15 +1,16 @@
-import {Layout} from "antd";
-import NextHead from 'next/head';
-import Head from './components/Head';
-import Foot from './components/Foot';
-import Sider from './components/Sider';
-import Content from './components/Content';
+import './assets/index.css';
+import AntdCarousel from './components/CarouselComponent';
 import Container from './components/Container';
+import LeftBar from './components/LeftBar';
 const IndexPage = () => (
   <Container title={'wizardAmigoTaipei'}
-    HeaderComponent={<div>This is Header</div>}
+    HeaderComponent={<div style={{display: "flex", justifyContent:"flex-end", alignItems:"center"}}><LeftBar/></div>}
     SiderComponent={<div>This is Sider</div>}
-    ContentComponent={<div>First Content</div>}
+    ContentComponent={<AntdCarousel>
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+    </AntdCarousel>}
   />
 );
 

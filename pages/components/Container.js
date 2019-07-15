@@ -23,7 +23,7 @@ export default class Container extends Component{
         </Content>
       </Layout>
       <Foot>
-        <div>&copy; UliveBuy Footer</div>
+        <div>&copy; wizard amigo taipei</div>
       </Foot>
     </Layout>);
   }
