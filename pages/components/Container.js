@@ -15,9 +15,6 @@ export default class Container extends Component{
         {HeaderComponent}
       </Head>
       <Layout style={{marginTop: 64}}>
-        <Sider>
-          {SiderComponent}
-        </Sider>
         <Content>
           {ContentComponent}
         </Content>
