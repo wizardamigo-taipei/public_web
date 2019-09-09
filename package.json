@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-plugin-import": "^1.12.1",
-    "antd": "^3.23.1",
+    "antd": "^3.23.2",
     "babel-plugin-inline-import": "^3.0.0",
     "next": "^9.0.0",
     "react": "^16.8.4",
