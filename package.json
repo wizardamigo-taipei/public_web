@@ -23,7 +23,7 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "koa": "^2.8.1",
+    "koa": "^2.8.2",
     "surge": "^0.21.3"
   }
 }
