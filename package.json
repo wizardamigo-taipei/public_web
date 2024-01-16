@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "koa": "^2.13.4",
-    "surge": "^0.23.0"
+    "surge": "^0.23.1"
   }
 }
